@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: sourcenamenew
+    description: 'testing purpose'
+    database : DBT
+    schema: DBTSCHEMA
+    tables:
+     - name : dbt_table_one
+     - name : dbt_table_two
