@@ -9,13 +9,24 @@ models:
             description: "The primary key for this table"
             tests:
                 - unique
-                #- not_null
+                - not_null
 
     - name: my_second_dbt_model
-      description: "A starter dbt model"
+      description: '{{ doc("table_events") }}'
       columns:
           - name: id
             description: "The primary key for this table"
             tests:
                 - unique
                 - not_null
+
+    - name: custom_model
+      description: 'this is my coustom model'
+      columns:
+          - name: id
+            description: '{{ doc("custom_model_id") }}'
+          - name: name
+            description: '{{ doc("custom_model_name") }}'
+          - name: age
+            description: '{{ doc("custom_model_age") }}'
+            

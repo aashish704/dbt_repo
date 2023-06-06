@@ -8,3 +8,4 @@ sources:
     tables:
      - name : dbt_table_one
      - name : dbt_table_two
+     - name : pass_table

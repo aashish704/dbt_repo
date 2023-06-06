@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: PASS_TABLE
+
+    columns:
+      - name: name
+
+      - name: age
+        
+      - name: country
+        tests:
+          - country_check
